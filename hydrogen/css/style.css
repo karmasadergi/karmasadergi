@@ -193,7 +193,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
   box-sizing: content-box;
 }
 
@@ -7887,6 +7888,7 @@ pre {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 #fh5co-footer .fh5co-footer-logo {
   font-family: "Montserrat", arial, sans-serif;
@@ -8322,4 +8324,29 @@ a > img.fh5co-align-center {
   margin-right: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Add these new styles for blog posts */
+.fh5co-desc h3 {
+    font-size: 1.5em;
+    margin: 15px 0 10px 0;
+}
+
+.post-meta {
+    color: #888;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.post-excerpt {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #2d6cdf;
+    font-weight: bold;
+}
+
+.item {
+    margin-bottom: 30px;
+}
