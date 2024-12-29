@@ -20,6 +20,8 @@ html {
 
 body {
   margin: 0;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 article,
@@ -1942,6 +1944,7 @@ pre code {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #000000;
 }
 .container:before, .container:after {
   content: " ";
@@ -4792,6 +4795,7 @@ tbody.collapse.in {
   font-size: 18px;
   line-height: 20px;
   height: 60px;
+  color: #ffffff;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -5187,7 +5191,7 @@ tbody.collapse.in {
   display: inline-block;
 }
 .breadcrumb > li + li:before {
-  content: "/ ";
+  content: "/ ";
   padding: 0 5px;
   color: #ccc;
 }
@@ -7679,11 +7683,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-main {
   padding-top: 5em;
+  background-color: #000000;
 }
 
 #fh5co-board .item {
   margin: 10px 10px 20px 10px;
-  background: #fff;
+  background: #1a1a1a;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -7700,6 +7705,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
   float: left;
   line-height: 24px;
+  background: #1a1a1a;
+  color: #ffffff;
 }
 #fh5co-board .item .fh5co-item-title {
   font-family: "Montserrat", arial, sans-serif;
@@ -7860,6 +7867,7 @@ pre {
 
 #fh5co-footer {
   padding: 10em 0;
+  background: #1a1a1a;
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
