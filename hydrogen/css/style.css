@@ -8575,3 +8575,36 @@ body {
     color: #EF5353;
     text-decoration: none;
 }
+
+/* Target the main KARMASA title */
+#fh5co-header .navbar-brand {
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Hover state for the main title */
+#fh5co-header .navbar-brand:hover {
+    color: #EF5353;
+}
+
+/* Make blog post titles smaller */
+#fh5co-board .post-title,
+#fh5co-board .post-title a,
+#fh5co-board .fh5co-desc h2,
+#fh5co-board .fh5co-desc h3 {
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 1.4em;  /* Reduced from 2.2em to 1.4em */
+    font-weight: 500;
+}
+
+/* Keep hover states */
+#fh5co-board .post-title a:hover {
+    color: #EF5353;
+    text-decoration: none;
+}
