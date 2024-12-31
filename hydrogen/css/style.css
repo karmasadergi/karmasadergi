@@ -13,7 +13,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -22,6 +22,9 @@ body {
   margin: 0;
   background-color: #000000;
   color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 1.42857;
 }
 
 article,
@@ -80,9 +83,22 @@ dfn {
   font-style: italic;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
 }
 
 mark {
@@ -145,8 +161,9 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  font: inherit;
-  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 button {
@@ -1403,7 +1420,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -1414,7 +1431,7 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "Times New Roman", Times, serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -1502,7 +1519,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7835,7 +7852,7 @@ pre {
   box-shadow: none !important;
   border: 2px solid #444;
   background: transparent;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .form-control:hover, .form-control:focus, .form-control:active {
   outline: none;
@@ -7891,7 +7908,7 @@ pre {
   color: #ffffff;
 }
 #fh5co-footer .fh5co-footer-logo {
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 30px;
   color: #ccc;
   margin-bottom: 30px;
@@ -8234,13 +8251,13 @@ pre {
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 .owl-carousel-fullwidth .item .fh5co-owl-text .fh5co-sub-lead {
   font-size: 30px;
   line-height: 42px;
   font-weight: 100;
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .js .to-animate {
