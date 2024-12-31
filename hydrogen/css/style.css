@@ -8608,3 +8608,17 @@ body {
     color: #EF5353;
     text-decoration: none;
 }
+
+/* Style the MENU text */
+.js .nav-toggle {
+    color: #ffffff;  /* Brighter white */
+    font-size: 1.8em;  /* Bigger size */
+    font-weight: 600;  /* Slightly bolder */
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);  /* Optional: adds subtle glow */
+}
+
+/* Hover state for menu */
+.js .nav-toggle:hover {
+    color: #EF5353;  /* Maintains consistent hover color */
+}
