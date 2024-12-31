@@ -7706,6 +7706,8 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-main {
   padding-top: 5em;
   background-color: #000000;
+  width: 100%;
+  float: left;
 }
 
 #fh5co-board .item {
@@ -8447,4 +8449,129 @@ h1, h2, h3, h4, h5, h6,
 .blog-title a:hover {
   color: #EF5353; /* Using the existing accent color for hover state */
   text-decoration: none;
+}
+
+.parallax-section {
+  /* The image used */
+  background-image: url('karmasadergi/img_1.jpg');
+  
+  /* Set a specific height */
+  min-height: 500px;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Ensure the section takes full width */
+  width: 100%;
+  
+  /* Optional: add some padding for content inside */
+  padding: 50px 0;
+}
+
+.smooth-parallax {
+    position: relative;
+    overflow: hidden;
+}
+
+.smooth-parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0);
+    will-change: transform;
+    z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.post h1, .post h2, .post h3,
+.post-title, .post-title a,
+.blog-title, .blog-title a {
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: 1px;  /* Adds space between letters */
+    font-size: 1.8em;     /* Makes text bigger */
+    font-weight: 500;     /* Keeps medium weight for better readability */
+}
+
+/* If you want different sizes for different heading levels */
+h1, .h1, .post-title, .blog-title {
+    font-size: 2.2em;
+}
+
+h2, .h2 {
+    font-size: 1.8em;
+}
+
+h3, .h3 {
+    font-size: 1.5em;
+}
+
+/* Set a consistent black color variable */
+:root {
+    --main-black: #000000;
+}
+
+body {
+    background-color: var(--main-black);
+}
+
+#fh5co-main {
+    background-color: var(--main-black);
+}
+
+.parallax-section {
+    background-color: var(--main-black);
+}
+
+#fh5co-board {
+    background-color: var(--main-black);
+}
+
+.post {
+    background-color: var(--main-black);
+}
+
+.item {
+    background-color: var(--main-black);
+}
+
+.fh5co-desc {
+    background-color: var(--main-black);
+}
+
+/* Handle any Bootstrap containers and rows */
+.container, 
+.row,
+.col-md-12,
+.col-md-6,
+.col-sm-12 {
+    background-color: var(--main-black);
+}
+
+/* Target main page titles specifically */
+#fh5co-board .post-title,
+#fh5co-board .post-title a,
+#fh5co-board .fh5co-desc h2,
+#fh5co-board .fh5co-desc h3 {
+    color: #ffffff;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+/* Ensure hover states maintain visibility */
+#fh5co-board .post-title a:hover {
+    color: #EF5353;
+    text-decoration: none;
 }
