@@ -98,7 +98,7 @@ h6,
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #ffffff;
 }
 
 mark {
@@ -1522,7 +1522,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #ffffff;
 }
 h1 small,
 h1 .small, h2 small,
@@ -2856,7 +2856,8 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 caption {
@@ -2884,7 +2885,7 @@ th {
   padding: 8px;
   line-height: 1.42857;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #333;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -3167,10 +3168,10 @@ output {
   padding: 14px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #222;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -8430,4 +8431,20 @@ a > img.fh5co-align-center {
 
 #fh5co-offcanvass ul li a:hover {
     color: #EF5353;
+}
+
+/* Post headlines on main page and everywhere else */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.post h1, .post h2, .post h3,
+.post-title, .post-title a,
+.blog-title, .blog-title a {
+  color: #ffffff;
+}
+
+/* Ensure links in headlines maintain visibility */
+.post-title a:hover,
+.blog-title a:hover {
+  color: #EF5353; /* Using the existing accent color for hover state */
+  text-decoration: none;
 }
