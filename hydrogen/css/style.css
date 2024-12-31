@@ -4797,6 +4797,7 @@ tbody.collapse.in {
   line-height: 20px;
   height: 60px;
   color: #ffffff;
+  font: 400 18px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -7510,6 +7511,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header .navbar-header {
   float: none;
+  font: 400 15px/1.42857 "Times New Roman", Times, serif;
+  color: #ffffff;
 }
 #fh5co-header > .navbar {
   -webkit-border-radius: 0px;
@@ -7597,8 +7600,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 20px;
-  font-family: "Montserrat", arial, sans-serif;
-  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
 }
 #fh5co-header .navbar-brand:hover {
   color: #404040;
