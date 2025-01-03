@@ -20,11 +20,33 @@ html {
 
 body {
   margin: 0;
-  background-color: #000000;
-  color: #ffffff;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url('C:\Users\yekta\OneDrive\Masaüstü\YaXşı\karmasadergi\hydrogen\images\maviates.jpg') !important;  /* Make sure to replace 'your-image.jpg' with your actual image filename */
+  background-size: cover !important;
+  background-position: center center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
   font-family: "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 1.42857;
+}
+
+/* Add a dark overlay to ensure text readability */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);  /* Adjust opacity as needed */
+  z-index: -1;
+}
+
+#fh5co-main {
+  position: relative;
+  z-index: 1;
 }
 
 article,
@@ -1962,7 +1984,7 @@ pre code {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent dark overlay */
 }
 .container:before, .container:after {
   content: " ";
