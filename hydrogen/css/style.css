@@ -8787,3 +8787,37 @@ body {
   color: white !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
 }
+
+/* Target posts in main section */
+#fh5co-board .item,
+#fh5co-board .item .fh5co-desc,
+#fh5co-board .item p,
+#fh5co-board .item h1,
+#fh5co-board .item h2,
+#fh5co-board .item h3,
+#fh5co-board .item h4,
+#fh5co-board .item h5,
+#fh5co-board .item h6,
+#fh5co-board .item a,
+#fh5co-board .item span,
+#fh5co-board .fh5co-item-title,
+.masonry-brick,
+.masonry-brick * {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Target any dynamic content or loaded posts */
+.fh5co-board-item,
+.fh5co-board-item *,
+article,
+article * {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Target post content specifically */
+.post-content,
+.post-title,
+.post-meta,
+.post-body {
+  font-family: "Times New Roman", Times, serif !important;
+}
