@@ -7836,6 +7836,26 @@ pre {
   border: 2px solid #d9534f;
 }
 
+/* Add these animation styles for the title */
+.animated-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.animate-letter {
+  display: inline-block;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 /* Add these styles for the search bar */
 .search-container {
     position: absolute;
