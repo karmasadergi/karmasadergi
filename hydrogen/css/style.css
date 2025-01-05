@@ -797,6 +797,10 @@ th {
   content: "\e105";
 }
 
+.glyphicon-eye-open:before {
+  content: "\e105";
+}
+
 .glyphicon-eye-close:before {
   content: "\e106";
 }
@@ -7368,7 +7372,7 @@ button.close {
 }
 /* Template Style =========== */
 body {
-  font-family: "Roboto", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 26px;
@@ -7391,7 +7395,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 ::-webkit-selection {
@@ -7476,7 +7480,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 15px;
   letter-spacing: 2px;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   z-index: 99;
   float: left;
   color: #444;
@@ -7515,7 +7519,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   float: right;
   margin-top: 16px;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: #444;
 }
 .fh5co-menu-btn i {
@@ -7570,7 +7574,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #000;
   font-weight: normal;
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 #fh5co-header > .navbar li a > span .border {
   display: block;
@@ -7749,7 +7753,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 #fh5co-board .item .fh5co-item-title {
-  font-family: "Montserrat", arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 17px;
   line-height: 24px;
   margin: 0;
@@ -8821,3 +8825,506 @@ article * {
 .post-body {
   font-family: "Times New Roman", Times, serif !important;
 }
+
+/* Make footer and post content transparent */
+#fh5co-footer,
+#fh5co-footer .container,
+#fh5co-footer .row,
+.fh5co-post-content,
+.fh5co-post,
+.fh5co-post *,
+.animate-box {
+  background: transparent !important;
+}
+
+/* Remove any box shadows or borders */
+#fh5co-footer,
+.fh5co-post-content,
+.fh5co-post {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Ensure text is readable on transparent background */
+#fh5co-footer p,
+#fh5co-footer h1,
+#fh5co-footer h2,
+#fh5co-footer h3,
+.fh5co-post-content p,
+.fh5co-post-content h1,
+.fh5co-post-content h2,
+.fh5co-post-content h3 {
+  color: white !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Center align post titles */
+.fh5co-post h1,
+.fh5co-post h2,
+.fh5co-post-header h1,
+.fh5co-post-header h2,
+.fh5co-post-content h1,
+.fh5co-post-content h2,
+#fh5co-title h1,
+#fh5co-title h2 {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Add some spacing for better appearance */
+.fh5co-post-header {
+    margin-bottom: 30px !important;
+    padding-top: 20px !important;
+}
+
+/* Target the header title specifically */
+.fh5co-post-header,
+.fh5co-post-header h1,
+#fh5co-header h1,
+#fh5co-main h1,
+.fh5co-heading h1,
+.animate-box h1 {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    position: relative !important;
+}
+
+/* Additional targeting for modal/popup content */
+.fh5co-overlay-header h1,
+.fh5co-content h1,
+.fh5co-post-content .fh5co-heading h1 {
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+}
+
+/* Center align post meta information */
+.post-meta {
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 15px auto !important;
+}
+
+.post-meta span {
+    display: block !important;
+    margin: 5px 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Make container and its contents transparent */
+.container,
+.container *,
+.container .row,
+.container .col-md-12,
+.container .fh5co-post,
+.container .fh5co-post-content,
+.container .animate-box {
+    background: transparent !important;
+}
+
+/* Remove any box shadows or borders */
+.container,
+.container div {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Ensure text remains readable */
+.container p,
+.container h1,
+.container h2,
+.container h3,
+.container span {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Adjust post content width and margins */
+.fh5co-post-content,
+.container .fh5co-post {
+    max-width: 1000px !important;
+    width: 90% !important;  /* responsive width for smaller screens */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 50px !important;  /* add padding on sides */
+}
+
+/* Adjust paragraph width for better readability */
+.fh5co-post-content p {
+    max-width: 800px !important;  /* slightly narrower than container for better readability */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    line-height: 1.6 !important;  /* better line spacing */
+}
+
+/* Maintain height constraints */
+.fh5co-post {
+    min-height: 400px !important;
+    height: auto !important;  /* allow content to expand if needed */
+    padding-bottom: 50px !important;  /* add some bottom spacing */
+}
+
+/* Center align the title in the post header */
+.fh5co-post-header h1,
+.fh5co-post-header h2,
+.fh5co-post-content h1,
+.fh5co-post-content h2,
+#fh5co-title h1,
+#fh5co-title h2 {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 20px 0 !important;
+}
+
+/* Center align both spans (author name and date) vertically */
+.post-meta span {
+    display: block !important;
+    margin: 5px 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Make the container and all nested elements transparent */
+.container,
+.container *,
+.container .row,
+.container .col-md-12,
+.container .fh5co-post,
+.container .fh5co-post-content,
+.container .animate-box {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Ensure text remains readable with white color and shadow */
+.container p,
+.container h1,
+.container h2,
+.container h3,
+.container span {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Make the footer area completely transparent */
+#fh5co-footer,
+#fh5co-footer .container,
+#fh5co-footer .row {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Make the post content area transparent */
+.fh5co-post-content,
+.fh5co-post,
+.fh5co-post *,
+.animate-box {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* Ensure text remains readable with white color and shadow */
+#fh5co-footer p,
+#fh5co-footer h1,
+#fh5co-footer h2,
+#fh5co-footer h3,
+.fh5co-post-content p,
+.fh5co-post-content h1,
+.fh5co-post-content h2,
+.fh5co-post-content h3 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Apply to all elements */
+* {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Explicitly target common elements and classes */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+input,
+textarea,
+button,
+select,
+option,
+label,
+legend,
+fieldset,
+form,
+table,
+th,
+td,
+tr,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+pre,
+code,
+kbd,
+samp,
+abbr,
+acronym,
+address,
+blockquote,
+cite,
+q,
+ins,
+del,
+dfn,
+em,
+strong,
+small,
+big,
+sub,
+sup,
+tt,
+var,
+s,
+u,
+strike,
+b,
+i,
+center,
+caption,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+main,
+details,
+summary,
+mark,
+meter,
+progress,
+time,
+ruby,
+rt,
+rp,
+bdi,
+bdo,
+wbr,
+.container,
+.row,
+.col-md-12,
+.col-lg-12,
+.col-sm-12,
+.col-xs-12,
+.fh5co-post,
+.fh5co-post-content,
+.animate-box,
+.fh5co-board-item,
+article,
+article *,
+.post-content,
+.post-title,
+.post-meta,
+.post-body,
+#fh5co-footer,
+#fh5co-footer .container,
+#fh5co-footer .row,
+.fh5co-post-content,
+.fh5co-post,
+.fh5co-post *,
+.animate-box {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Override any existing font declarations */
+@font-face {
+    font-family: "Times New Roman", Times, serif !important;
+    src: url("../fonts/times-new-roman.woff2") format("woff2"),
+         url("../fonts/times-new-roman.woff") format("woff"),
+         url("../fonts/times-new-roman.ttf") format("truetype"),
+         url("../fonts/times-new-roman.svg#TimesNewRoman") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Include fallback fonts */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+input,
+textarea,
+button,
+select,
+option,
+label,
+legend,
+fieldset,
+form,
+table,
+th,
+td,
+tr,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+pre,
+code,
+kbd,
+samp,
+abbr,
+acronym,
+address,
+blockquote,
+cite,
+q,
+ins,
+del,
+dfn,
+em,
+strong,
+small,
+big,
+sub,
+sup,
+tt,
+var,
+s,
+u,
+strike,
+b,
+i,
+center,
+caption,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header,
+nav,
+section,
+main,
+details,
+summary,
+mark,
+meter,
+progress,
+time,
+ruby,
+rt,
+rp,
+bdi,
+bdo,
+wbr,
+.container,
+.row,
+.col-md-12,
+.col-lg-12,
+.col-sm-12,
+.col-xs-12,
+.fh5co-post,
+.fh5co-post-content,
+.animate-box,
+.fh5co-board-item,
+article,
+article *,
+.post-content,
+.post-title,
+.post-meta,
+.post-body,
+#fh5co-footer,
+#fh5co-footer .container,
+#fh5co-footer .row,
+.fh5co-post-content,
+.fh5co-post,
+.fh5co-post *,
+.animate-box {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+/* Override any potential web font declarations */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=VT323:400,700");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700");
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono:400,700");
+@import url("https://fonts.googleapis.com/css?family=VT323:400,700");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,700");
