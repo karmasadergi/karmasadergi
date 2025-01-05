@@ -12,25 +12,29 @@ document.addEventListener('DOMContentLoaded', function() {
             const searchTerm = this.value.toLowerCase();
             console.log('Searching for:', searchTerm);
             
-            // Try different selectors to find the posts
-            const posts = document.querySelectorAll('.item');  // Changed selector
+            // Get all posts
+            const posts = document.querySelectorAll('.item');
             console.log('Found posts:', posts.length);
             
             let found = false;
             
             posts.forEach(post => {
+                // Get both title and author
                 const title = post.querySelector('h3');
-                if (title) {
-                    const titleText = title.textContent.toLowerCase();
-                    console.log('Checking title:', titleText);
-                    
-                    if (titleText.includes(searchTerm)) {
-                        post.style.display = 'block';
-                        found = true;
-                        console.log('Match found:', titleText);
-                    } else {
-                        post.style.display = 'none';
-                    }
+                const titleText = title ? title.textContent.toLowerCase() : '';
+                
+                // Skip the "Your New Post Title" template post
+                if (titleText === 'your new post title') {
+                    post.style.display = 'none';
+                    return;
+                }
+                
+                if (titleText.includes(searchTerm)) {
+                    post.style.display = 'block';
+                    found = true;
+                    console.log('Match found:', titleText);
+                } else {
+                    post.style.display = 'none';
                 }
             });
             
@@ -52,8 +56,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 noResults.style.display = 'none';
             }
             
+            // Show all posts except template when search is empty
             if (searchTerm === '') {
-                posts.forEach(post => post.style.display = 'block');
+                posts.forEach(post => {
+                    const title = post.querySelector('h3');
+                    const titleText = title ? title.textContent.toLowerCase() : '';
+                    if (titleText !== 'your new post title') {
+                        post.style.display = 'block';
+                    }
+                });
                 if (noResults) noResults.style.display = 'none';
             }
         });
