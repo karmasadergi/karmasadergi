@@ -7836,6 +7836,57 @@ pre {
   border: 2px solid #d9534f;
 }
 
+/* Add these styles for the search bar */
+.search-container {
+    padding: 15px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    z-index: 999; /* Ensure search bar appears above other elements */
+}
+
+.search-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #2c98f0; /* Hydrogen's primary blue color */
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff; /* White text */
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #2c98f0;
+    box-shadow: 0 0 10px rgba(44, 152, 240, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.search-button {
+    background: none;
+    border: none;
+    margin-left: -45px;
+    color: #2c98f0; /* Hydrogen's blue color */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.search-button:hover {
+    color: #fff;
+}
+
 .btn-info {
   background: #5bc0de;
   border: 2px solid #5bc0de;
@@ -8715,7 +8766,7 @@ body {
 /* If text needs to be more visible, add a text shadow */
 .navbar-brand,
 #fh5co-board .item .fh5co-item-title {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  /* Optional: adds subtle glow */
   background: transparent !important;
 }
 
